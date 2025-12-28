@@ -10,6 +10,8 @@ namespace UnityTemplateProjects
     public class SimpleCameraController : MonoBehaviour
     {
         class CameraState
+
+        // Helper class for storing and manipulating camera state
         {
             public float yaw;
             public float pitch;
