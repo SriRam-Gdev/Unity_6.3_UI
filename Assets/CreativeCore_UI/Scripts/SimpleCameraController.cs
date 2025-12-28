@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 #endif
 
 using UnityEngine;
+// Simple flythrough camera controller inspired by
 
 namespace UnityTemplateProjects
 {
