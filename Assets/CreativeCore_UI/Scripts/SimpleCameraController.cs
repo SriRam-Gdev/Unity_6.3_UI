@@ -22,6 +22,7 @@ namespace UnityTemplateProjects
 
             public void SetFromTransform(Transform t)
             {
+                // Note: Unity uses a left-handed coordinate system, so roll is around Z, pitch is around X, and yaw is around Y
                 pitch = t.eulerAngles.x;
                 yaw = t.eulerAngles.y;
                 roll = t.eulerAngles.z;
