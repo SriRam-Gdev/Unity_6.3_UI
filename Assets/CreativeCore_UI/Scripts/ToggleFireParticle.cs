@@ -17,7 +17,7 @@ public class ToggleFireParticle : MonoBehaviour
     {
         fireParticle = GetComponent<ParticleSystem>();
     }
-
+//Input components for fire particles
     void Update()
     {
         if (Input.GetKeyDown(toggleKey))
