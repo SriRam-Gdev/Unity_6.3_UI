@@ -22,6 +22,7 @@ public class ToggleFireParticle : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
+            // Toggle fire particle system
             if(fireParticle.isPlaying)
             {
                 fireParticle.Stop();
@@ -30,6 +31,7 @@ public class ToggleFireParticle : MonoBehaviour
                     extinguishParticle.Play();
             } else
             {
+                // Start fire particle system
                 fireParticle.Play();
                 pointLight.SetActive(true);
                 if (igniteParticle != null)
