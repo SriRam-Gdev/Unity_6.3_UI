@@ -57,6 +57,7 @@ namespace UnityTemplateProjects
                 t.position = new Vector3(x, y, z);
             }
         }
+        // Camera state variables
         
         CameraState m_TargetCameraState = new CameraState();
         CameraState m_InterpolatingCameraState = new CameraState();
@@ -77,6 +78,8 @@ namespace UnityTemplateProjects
 
         [Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")]
         public bool invertY = false;
+
+        // Input action variables
 
 #if ENABLE_INPUT_SYSTEM
         InputAction movementAction;
@@ -135,6 +138,8 @@ namespace UnityTemplateProjects
             direction.z = moveDelta.y;
             direction.y = verticalMovementAction.ReadValue<Vector2>().y;
 #else
+// Keyboard movement
+// W, A, S, D for forward, left, back, right
             if (Input.GetKey(KeyCode.W))
             {
                 direction += Vector3.forward;
